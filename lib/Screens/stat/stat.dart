@@ -1,6 +1,4 @@
 import 'package:expense_app/Screens/stat/chart.dart';
-import 'package:fl_chart/fl_chart.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class StatScreen extends StatelessWidget {
@@ -10,7 +8,7 @@ class StatScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 25, vertical: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -26,8 +24,8 @@ class StatScreen extends StatelessWidget {
               height: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
                   color: Colors.white, borderRadius: BorderRadius.circular(12)),
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(12, 20, 12, 12),
+              child: const Padding(
+                padding: EdgeInsets.fromLTRB(12, 20, 12, 12),
                 child: Mychart(),
               ),
             )

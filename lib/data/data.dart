@@ -9,7 +9,7 @@ List<Map<String, dynamic>> TransactionData = [
     ),
     'color': Colors.yellow[700],
     'name': ' Food',
-    'totalamount': '-\₹430',
+    'totalamount': '-₹430',
     'date': 'Today'
   },
   {
@@ -19,7 +19,7 @@ List<Map<String, dynamic>> TransactionData = [
     ),
     'color': Colors.green,
     'name': ' Travel',
-    'totalamount': '-\₹1620',
+    'totalamount': '-₹1620',
     'date': 'Today'
   },
   {
@@ -29,7 +29,7 @@ List<Map<String, dynamic>> TransactionData = [
     ),
     'color': Colors.purple,
     'name': ' Shopping',
-    'totalamount': '-\₹620',
+    'totalamount': '-₹620',
     'date': 'Today'
   },
   {
@@ -39,7 +39,7 @@ List<Map<String, dynamic>> TransactionData = [
     ),
     'color': Colors.blue,
     'name': ' Health',
-    'totalamount': '-\₹220',
+    'totalamount': '-₹220',
     'date': 'Yesterday'
   }
 ];

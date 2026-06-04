@@ -28,7 +28,6 @@ class _HomeScreenState extends State<HomeScreen> {
               setState(() {
                 index = value;
               });
-              print(value);
             },
 
             showSelectedLabels: false,
@@ -37,11 +36,11 @@ class _HomeScreenState extends State<HomeScreen> {
             //type: BottomNavigationBarType.fixed,
             items: [
               BottomNavigationBarItem(
-                  icon: Icon(CupertinoIcons.home),
+                  icon: const Icon(CupertinoIcons.home),
                   label: 'Home',
                   backgroundColor: index == 0 ? selecteditem : unselecteditem),
               BottomNavigationBarItem(
-                  icon: Icon(CupertinoIcons.graph_square_fill),
+                  icon: const Icon(CupertinoIcons.graph_square_fill),
                   label: "Status",
                   backgroundColor: index == 1 ? selecteditem : unselecteditem)
             ],
@@ -66,6 +65,6 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               child: const Icon(CupertinoIcons.add)),
         ),
-        body: index == 0 ? MainScreen() : StatScreen());
+        body: index == 0 ? const MainScreen() : const StatScreen());
   }
 }

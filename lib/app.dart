@@ -6,6 +6,6 @@ class Myapp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MyAppview();
+    return const MyAppview();
   }
 }

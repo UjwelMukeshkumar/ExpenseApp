@@ -56,7 +56,7 @@ class MainScreen extends StatelessWidget {
                   ],
                 ),
                 IconButton(
-                    onPressed: () {}, icon: Icon(CupertinoIcons.settings))
+                    onPressed: () {}, icon: const Icon(CupertinoIcons.settings))
               ],
             ),
             const SizedBox(
@@ -77,7 +77,7 @@ class MainScreen extends StatelessWidget {
                         blurRadius: 4,
                         spreadRadius: 0,
                         color: Colors.grey.shade400,
-                        offset: Offset(5, 5))
+                        offset: const Offset(5, 5))
                   ]),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -205,7 +205,7 @@ class MainScreen extends StatelessWidget {
                   "Transaction",
                   style: TextStyle(
                       fontSize: 16,
-                      color: Theme.of(context).colorScheme.onBackground,
+                      color: Theme.of(context).colorScheme.onSurface,
                       fontWeight: FontWeight.bold),
                 ),
                 GestureDetector(
@@ -233,7 +233,7 @@ class MainScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(12.0),
+                        padding: const EdgeInsets.all(12.0),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -269,7 +269,7 @@ class MainScreen extends StatelessWidget {
                               children: [
                                 Text(
                                   TransactionData[i]['totalamount'],
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                       fontSize: 14,
                                       color: Colors.black,
                                       fontWeight: FontWeight.w400),
