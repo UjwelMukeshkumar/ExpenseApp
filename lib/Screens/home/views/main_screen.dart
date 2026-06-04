@@ -223,7 +223,7 @@ class MainScreen extends StatelessWidget {
             const SizedBox(height: 20),
             Expanded(
               child: ListView.builder(
-                itemCount: TransactionData.length,
+                itemCount: transactionData.length,
                 itemBuilder: (context, int i) {
                   return Padding(
                     padding: const EdgeInsets.only(bottom: 16),
@@ -246,17 +246,17 @@ class MainScreen extends StatelessWidget {
                                       width: 50,
                                       height: 50,
                                       decoration: BoxDecoration(
-                                          color: TransactionData[i]['color'],
+                                          color: transactionData[i]['color'],
                                           shape: BoxShape.circle),
                                     ),
-                                    TransactionData[i]['icon'],
+                                    transactionData[i]['icon'],
                                   ],
                                 ),
                                 const SizedBox(
                                   width: 12,
                                 ),
                                 Text(
-                                  TransactionData[i]['name'],
+                                  transactionData[i]['name'],
                                   style: const TextStyle(
                                       fontSize: 14,
                                       color: Colors.black,
@@ -268,14 +268,14 @@ class MainScreen extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.end,
                               children: [
                                 Text(
-                                  TransactionData[i]['totalamount'],
+                                  transactionData[i]['totalamount'],
                                   style: const TextStyle(
                                       fontSize: 14,
                                       color: Colors.black,
                                       fontWeight: FontWeight.w400),
                                 ),
                                 Text(
-                                  TransactionData[i]['date'],
+                                  transactionData[i]['date'],
                                   style: TextStyle(
                                       fontSize: 14,
                                       color: Colors.grey.shade500,
